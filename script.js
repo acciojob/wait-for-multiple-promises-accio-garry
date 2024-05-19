@@ -44,4 +44,7 @@ Promise.all([p1, p2, p3]).then((times) => {
     let endTime = Date.now();
     let totalTime = endTime - startTime; // calculate total time
     document.getElementById("total").innerHTML = totalTime / 1000; // display total time
+	 let loadingRow = document.getElementById("loading");
+     loadingRow.parentNode.removeChild(loadingRow);
 });
+
